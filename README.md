@@ -1,6 +1,7 @@
 #### Technical
- - [ ] the script `WolfAgent.cs` (in Assets) needs to be debugged so that it doesn't spit out errors during training.
- - [ ] the script should be so that whenever the wolf noclips from the platform, it gets moved back to the place of origin. That part *doesn't currently work*. 
+ - [x] the script `WolfAgent.cs` (in Assets) needs to be debugged so that it doesn't spit out errors during training.
+ - [ ] the script should be so that whenever the wolf noclips from the platform, it gets moved back to the place of origin. That part *doesn't currently work*.
+	Solution: `root.localPosition` is position relative to the parent - in our case to WolfAgent, it should be relative to Training Area instead
  - [ ] when starting up the training process, I (Maciek) get an error after a ~minute: ![[Pasted image 20230417181924.png]]
  If others get this error as well, it needs to be resolved. 
   - [ ] Think about a more lightweight ragdoll, so that the model doesn't have such a hard time working with physics
