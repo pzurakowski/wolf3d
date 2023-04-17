@@ -9,7 +9,6 @@ using Unity.MLAgents;
 using Unity.MLAgents.Sensors;
 using Unity.MLAgents.Actuators;
 
-
 public class WolfAgent : Agent
 {
         // Actionable objects
@@ -70,12 +69,13 @@ public class WolfAgent : Agent
         }
 
         // apply output of neural net as torque to each joint
-         public virtual void OnActionReceived(float[] vectorAction) {
+         public override void OnActionReceived(ActionBuffers actions) {
                 for (int i = 0; i < countJoints; ++i) {
                         // get torque
-                        controlSignal.x = vectorAction[3*i];
-                        controlSignal.y = vectorAction[3*i + 1];
-                        controlSignal.z = vectorAction[3*i + 2];
+                        controlSignal.x = actions.ContinuousActions[3*i];
+                        controlSignal.y = actions.ContinuousActions[3*i + 1];
+                        controlSignal.z = actions.ContinuousActions[3*i + 2];
+
                         // apply it to the motor
                         motors[i].AddTorque(controlSignal);   
                 } 
@@ -94,4 +94,3 @@ public class WolfAgent : Agent
                 }
         }
 }
-
