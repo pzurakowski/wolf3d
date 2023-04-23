@@ -9,7 +9,7 @@ using Unity.MLAgents;
 using Unity.MLAgents.Sensors;
 using Unity.MLAgents.Actuators;
 
-public class u_WolfController : Agent
+public class WolfAgent2 : Agent
 {       //multiagent reinforcment learnment
         // Actionable objects
         public int countJoints = 21;
