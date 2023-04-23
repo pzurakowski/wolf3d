@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &622518902 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1446212686346634267, guid: d379fc2879ac64163813d9d10c187309, type: 3}
+  m_PrefabInstance: {fileID: 1913888252}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,6 +222,83 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &901741178 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1446212686917528437, guid: d379fc2879ac64163813d9d10c187309, type: 3}
+  m_PrefabInstance: {fileID: 1913888252}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &901741180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901741178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68deb552f194b4bc9a1edc04119c8b18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentParameters:
+    maxStep: 0
+  hasUpgradedFromAgentParameters: 1
+  MaxStep: 0
+  countJoints: 21
+  motors:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  controlSignal: {x: 0, y: 0, z: 0}
+  root: {fileID: 622518902}
+  target: {fileID: 1683085761}
+--- !u!114 &901741181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901741178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1c4e0b1822b495aa52bc52839ecb30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BrainParameters:
+    VectorObservationSize: 105
+    NumStackedVectorObservations: 1
+    m_ActionSpec:
+      m_NumContinuousActions: 51
+      BranchSizes: 01000000
+    VectorActionSize: 
+    VectorActionDescriptions: []
+    VectorActionSpaceType: 0
+    hasUpgradedBrainParametersWithActionSpec: 1
+  m_Model: {fileID: 0}
+  m_InferenceDevice: 0
+  m_BehaviorType: 0
+  m_BehaviorName: My Behavior
+  TeamId: 0
+  m_UseChildSensors: 1
+  m_UseChildActuators: 1
+  m_ObservableAttributeHandling: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,6 +383,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1683085761 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1446212686094421571, guid: d379fc2879ac64163813d9d10c187309, type: 3}
+  m_PrefabInstance: {fileID: 1913888252}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1913888252
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -308,6 +395,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1446212686917528437, guid: d379fc2879ac64163813d9d10c187309, type: 3}
+      propertyPath: m_Name
+      value: WolfAgent2
+      objectReference: {fileID: 0}
     - target: {fileID: 1446212687741639450, guid: d379fc2879ac64163813d9d10c187309, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -356,5 +447,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: second_TrainingArea
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2453214783227407818, guid: d379fc2879ac64163813d9d10c187309, type: 3}
+    - {fileID: 5920375548199761072, guid: d379fc2879ac64163813d9d10c187309, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d379fc2879ac64163813d9d10c187309, type: 3}

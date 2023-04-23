@@ -16,6 +16,8 @@ public class WolfAgent : Agent
         public Rigidbody[] motors = new Rigidbody[17];
 
         // Other objects
+        // Find the game object with the specified tag
+        
         public Vector3 controlSignal = Vector3.zero;
         public Transform root;
         public Transform target;

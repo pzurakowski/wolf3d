@@ -29,7 +29,7 @@ public class WolfAgent2 : Agent
                         {"forearm_right_front", 6},
                         {"forearm_left_front", 7}, {"knee_right_back", 8}, {"knee_left_back", 9}, {"knee_right_front", 10},
                         {"knee_left_front", 11}, {"ankle_right_back", 12}, {"ankle_right_front", 13},
-                        {"ankle_left_back", 14}, {"ankle_right_back", 15}, {"hip_right_back", 16}, {"hip_left_back", 17}, 
+                        {"ankle_left_front", 14}, {"ankle_left_back", 15}, {"hip_right_back", 16}, {"hip_left_back", 17}, 
                         {"tail_first",18}, {"tail_second",19}, {"tail_third",20}
                 };
 
@@ -95,5 +95,7 @@ public class WolfAgent2 : Agent
                         EndEpisode();
                 }
         }
+
+
 }
 
